@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy 25th Birthday, Indika Oktafiani</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+    :root{
+      --bg1: linear-gradient(135deg,#e6f0ff 0%, #ffeef6 100%);
+      --accent: #1e90ff;
+      --pink: #ffb6c1;
+      --trans: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Poppins,system-ui,Segoe UI,Roboto,Arial; background:var(--bg1); color:#222; min-height:100vh; overflow-x:hidden;}
+    .container{max-width:1000px;margin:40px auto;padding:28px;background:rgba(255,255,255,0.85);border-radius:18px;box-shadow:0 10px 35px rgba(30,30,60,0.12);position:relative;overflow:hidden}
+    header{display:flex;align-items:center;gap:18px}
+    .badge{background:linear-gradient(90deg,var(--accent),#9ad0ff);padding:10px 16px;border-radius:12px;color:white;font-weight:600;box-shadow:0 6px 18px rgba(30,144,255,0.18)}
+    h1{font-family: 'Playfair Display', serif;font-size:34px;color:#183b6f;margin-bottom:6px}
+    p.lead{color:#34495e;opacity:0.95}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:18px;align-items:center}
+    .card{padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.4));backdrop-filter:blur(6px);border:1px solid rgba(30,30,60,0.04)}
+    .message{font-size:16px;line-height:1.6;color:#2b3a4a;padding:14px;border-radius:10px}
+    .photos{display:flex;flex-direction:column;gap:12px}
+    .photos img{width:100%;height:180px;object-fit:cover;border-radius:10px;box-shadow:0 8px 20px rgba(20,40,80,0.08)}
+    .center{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+    .btn{background:linear-gradient(90deg,#ff8fb1,#9ad0ff);padding:10px 16px;border-radius:12px;color:white;font-weight:600;border:none;cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+    .small{font-size:13px;color:#50607a}
+    /* floating balloons */
+    .balloon{position:absolute;left:6%;top:10%;width:60px;height:90px;border-radius:50% 50% 45% 45%;transform-origin:center;opacity:0.95}
+    .balloon:after{content:"";position:absolute;left:50%;top:88%;width:2px;height:40px;background:rgba(0,0,0,0.06);transform:translateX(-50%)}
+    .balloon.blue{background:linear-gradient(180deg,#9ad0ff,#1e90ff);animation:float 8s linear infinite}
+    .balloon.pink{left:auto;right:8%;top:18%;background:linear-gradient(180deg,#ffd1e6,#ff8fb1);animation:float 10s linear infinite}
+    @keyframes float{0%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-30px) rotate(6deg)}100%{transform:translateY(0) rotate(-4deg)}}
+    /* petals */
+    .petal{position:absolute;left:50%;top:0;width:18px;height:18px;border-radius:50%;background:rgba(255,180,200,0.9);opacity:0.9;animation:petal 8s linear infinite}
+    @keyframes petal{0%{transform:translateY(-10vh) translateX(0) rotate(0)}100%{transform:translateY(110vh) translateX(80px) rotate(480deg);opacity:0.24}}
+    /* bokeh */
+    .bokeh{position:absolute;right:-80px;bottom:-80px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,0.6),transparent 40%);} 
+    footer{margin-top:18px;text-align:center;color:#5b6b80;font-size:13px}
+    /* responsive */
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}.photos img{height:160px}}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <div class="balloon blue" aria-hidden="true"></div>
+    <div class="balloon pink" aria-hidden="true"></div>
+    <div class="petal" style="left:20%;animation-duration:9s;"></div>
+    <div class="petal" style="left:40%;animation-duration:11s;background:rgba(154,208,255,0.95)"></div>
+    <div class="petal" style="left:60%;animation-duration:10s"></div>
+    <div class="petal" style="left:80%;animation-duration:12s;background:rgba(255,235,245,0.95)"></div>
+    <header>
+      <div class="badge">Happy 25th</div>
+      <div>
+        <h1>Indika Oktafiani</h1>
+        <p class="lead">Semoga hari spesialmu penuh cinta, tawa, dan keberkahan.</p>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="Birthday main section">
+      <div class="card">
+        <div class="center">
+          <div style="display:flex;align-items:center;gap:12px">
+            <h2 style="font-family:'Playfair Display',serif;margin:0;color:#1b3760">Selamat Ulang Tahun, Indika 🎉</h2>
+            <div style="padding:6px 10px;border-radius:10px;background:linear-gradient(90deg,#ffeaf0,#f0f7ff);font-size:14px;color:#33475b">25 Tahun</div>
+          </div>
+
+          <div class="message" style="margin-top:12px;">
+            Hari ini, aku langitkan semua doa terbaik aku buat kamu. Semoga hal-hal yang ngebuat kamu runtuh turut menjadi alasan kamu untuk tumbuh. semoga dunia senantiasa menjaga kamu dimana pun kamu berada. semoga hari-hari kamu selalu diiringi cinta yang tidak pernah ada batasnya. dan semoga, senyum orang tua kamu yang selalu kamu usahakan itu kini sudah terlaksana yaa. aku tau kamu perempuan hebatt, perempuan yang penuh ceria, perempuan yang selalu tegar ketika menghadapi masalah. semoga apa yang sedang kamu impikan bisa tercapai, ekspetasi ekspetasi kamu bisa terlaksana. tetap jadi wanita yang kuatt yaaa cantikkk
+          </div>
+
+          <div style="display:flex;gap:10px;margin-top:12px;align-items:center">
+            <button id="playBtn" class="btn" aria-pressed="false">Putar Musik</button>
+            <div class="small">Klik tombol untuk memulai musik jika tidak otomatis.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <aside class="photos">
+        <div class="card">
+          <img src="foto1.jpg" alt="Foto Indika 1 (ganti dengan foto Anda)">
+        </div>
+        <div class="card">
+          <img src="foto2.jpg" alt="Foto Indika 2 (ganti dengan foto Anda)">
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div class="small">Dari seseorang yang sayang. 💙</div>
+    </footer>
+    <div class="bokeh" aria-hidden="true"></div>
+  </div>
+
+  <audio id="bgAudio" loop preload="auto" src="music.mp3"></audio>
+
+  <script>
+    const audio = document.getElementById('bgAudio');
+    const btn = document.getElementById('playBtn');
+    let triedAutoplay = false;
+
+    function tryAutoplay(){
+      if(triedAutoplay) return;
+      triedAutoplay = true;
+      const playPromise = audio.play();
+      if(playPromise !== undefined){
+        playPromise.then(()=>{
+          btn.textContent = 'Musik Diputar';
+          btn.setAttribute('aria-pressed','true');
+        }).catch(()=>{
+          btn.textContent = 'Putar Musik';
+          btn.setAttribute('aria-pressed','false');
+        });
+      }
+    }
+
+    // Try autoplay after small delay (browsers may block until user gesture)
+    setTimeout(tryAutoplay, 500);
+
+    btn.addEventListener('click', ()=>{
+      if(audio.paused){ audio.play(); btn.textContent='Musik Diputar'; btn.setAttribute('aria-pressed','true'); }
+      else { audio.pause(); btn.textContent='Putar Musik'; btn.setAttribute('aria-pressed','false'); }
+    });
+
+    // Small confetti when page loaded
+    window.addEventListener('load', ()=>{
+      // gentle pop sound (no extra assets) + small sparkle animation via CSS already present
+      document.body.style.transition = 'background 1s ease';
+    });
+  </script>
+</body>
+</html>
